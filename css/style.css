@@ -65,16 +65,8 @@ html {
 		font-family: 'Open Sans', sans-serif;
 	}
 	a, a:visited { /* порядок правил для ссылок имеет значение */
-		color: blue;
 		text-decoration: none;
-	}
-	a:hover {
-		color: green;
-		text-decoration: none;
-	}
-	a:focus, a:active {
-		color: orange;
-		text-decoration: none;
+		color: #656363;
 	}
 	img{
 		max-width:100%;
@@ -82,8 +74,7 @@ html {
 	.centerfix{
 		max-width: 1060px;
 		margin: 0 auto;
-		padding: 0 4%;
-		border: 1px solid blue;
+		padding: 0 3.72%;
 	}
 	.main-menu,
 	.footer-menu{
@@ -94,47 +85,71 @@ html {
 		display: flex;
 		justify-content: space-between;
 		padding-top: 40px;
+		margin-bottom: 50px;
 	}
 	aside{
-		width: 22%;
+		width: 25%;
 	}
 	section{
-		width: 63%;
+		width: 70%;
 	}
 /* --------------- базовые настройки ---------*/
 .logo{
 	margin-top:50px;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 }
 .main-menu{
-background-image: linear-gradient(to bottom, #5e5e5e, #444343);
+	background-image: linear-gradient(to bottom, #5e5e5e, #444343);
 }
-.main-menu li a{
-	display: block;
-	font-size: 16.67px;
-	line-height: 29.33px;
-	color: #fff;
-	padding: 13px 24px;
-	margin-right: 30px;
-}
-.current{
-	background-image: linear-gradient(to bottom, #4a4a4a, #2e2e2e);
-	border-left: 1px solid #838383;
-	border-right: 1px solid #838383;
-}
+		.main-menu a{
+			display: block;
+			line-height: 29.33px;
+			font-size: 14.67px;
+			color: #fff;
+			padding: 5px 25px;
+			margin-right: 34px;
+			border-left: 1px solid transparent;
+			border-right: 1px solid transparent;
+		}
+		.main-menu li a:hover{
+			background-image: linear-gradient(to bottom, #4a4a4a, #2e2e2e);
+			border-left: 1px solid #838383;
+			border-right: 1px solid #838383;
+		}
 .photo{
 	border: 1px solid #c8c8c8;
 	width: 100%;
-	text-align: center;
+	max-width: 100%;
 }
 .text{
-	padding: 40px 25px;
+	padding: 12px 20px 12px 25px;
+	letter-spacing: -0.2px;
 }
 .page-menu li{
 	color: #656363;
 	border: 1px solid #c8c8c8;
-	padding: 15px 138px 15px 23px;
+	padding: 1px 22px;
+	line-height: 37.33px;
 }
-.page-menu a:hover{
-	color: #2c2c2c;
+	.page-menu a:hover{
+		color: #2c2c2c;
+		padding-left: 35px;
+	}
+.main-footer{
+	display: flex;
+	justify-content: space-between;
+	background-color: #e1e1e1;
+}
+.footer-menu li{
+	padding: 10px 25px;
+	margin-right: 43px;
+}
+	.footer-menu a{
+		color:#2c2c2c;
+	}
+	.footer-menu a:hover{
+		text-decoration: underline;
+	}
+.copyright{
+	padding: 10px 25px;
 }
